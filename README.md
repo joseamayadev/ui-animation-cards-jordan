@@ -87,6 +87,10 @@ Este es mi correo profesional ***jose@joseamaya.tech***, si me escribes te asegu
 Atentamente, 
 <br>
 <br>
+[Link al repo](https://github.com/syntaxter/ui-animation-cards-jordan)
+[Link a la demo](https://syntaxter.github.io/ui-animation-cards-jordan)
+<br>
+
 ![Perfil](https://res.cloudinary.com/www-ismyt-com/image/upload/v1628821040/IMAGENES/GITHUB/profile_qcrojr.png)<br>
 <strong style="color:#4E54FF;">José A. Amaya</strong>
 
