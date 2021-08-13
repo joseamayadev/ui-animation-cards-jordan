@@ -2,7 +2,7 @@
 ![](https://res.cloudinary.com/www-ismyt-com/image/upload/v1628822848/IMAGENES/GITHUB/header-jordan-animation_c1is5k.svg)
 <br>
 
-Este diseñ fue creado usando unicamente css y html, lenguajes de programaciones sobre los cuales se fundamente la web.
+Este diseño fue creado usando unicamente css y html, lenguajes de programaciones sobre los cuales se fundamente la web.
 <br>
 
 Abajo te explico como utilizar este diseño en tu web o relacionados otros de tus elementos para crear una mejor experiencia de usuario.
