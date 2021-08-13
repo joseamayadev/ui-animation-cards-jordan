@@ -88,6 +88,8 @@ Atentamente,
 <br>
 <br>
 [Link al repo](https://github.com/syntaxter/ui-animation-cards-jordan)
+<br>
+
 [Link a la demo](https://syntaxter.github.io/ui-animation-cards-jordan)
 <br>
 
