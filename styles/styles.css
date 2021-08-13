@@ -1,0 +1,187 @@
+/* Defininción de varibles globales */
+
+:root {
+    --main-bg-color: #0E0E0E;
+    --circle-bg-color: #4E54FF;
+    --card-bg-color: #F4E236;
+    --main-font: "Pontano Sans";
+}
+
+
+/* Reseteo de margenes y estilos nativos del navegador */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-bg-color);
+    font-family: var(--main-font);
+}
+
+.contenedor {
+    background-color: var(--card-bg-color);
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    border: none;
+    z-index: 10;
+}
+
+.contenedor::before {
+    content: "";
+    position: absolute;
+    background-color: var(--circle-bg-color);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: 0.5s;
+    right: -20px;
+    top: -20px;
+}
+
+.contenedor:hover::before {
+    width: 250px;
+    height: 250px;
+    right: -35px;
+    top: -30px;
+}
+
+.contenedor::after {
+    content: "JORDAN";
+    font-family: var(--main-font);
+    position: absolute;
+    top: 50%;
+    font-size: 120px;
+    position: absolute;
+    color: var(--main-bg-color);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.contenedor:hover::after {
+    transform: translateX(-30%) translateY(-20px);
+    transition: 1.5s;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    transition: 0.6s;
+}
+
+img {
+    position: absolute;
+    max-width: 280px;
+    left: 20px;
+    top: 80px;
+    transform: rotate(-35deg);
+    transition: 0.5s;
+}
+
+.contenedor:hover .card img {
+    left: 20px;
+    top: 40px;
+    transition: 0.5s;
+}
+
+.contenedor .contenedor-texto {
+    position: absolute;
+    text-align: center;
+    bottom: -10%;
+    width: 100%;
+    height: 30%;
+    transition: all 1s;
+}
+
+.contenedor .card:hover .contenedor-texto {
+    position: absolute;
+    text-align: center;
+    bottom: 40px;
+    width: 100%;
+    height: 20%;
+    transition: all 0.8s;
+}
+
+.contenedor .contenedor-texto .tamano {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    /* background-color: green; */
+}
+
+.contenedor .contenedor-texto .tamano h4,
+.contenedor .contenedor-texto .colors h4 {
+    color: var(--main-font);
+}
+
+.contenedor .contenedor-texto .tamano {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.contenedor .contenedor-texto .tamano button {
+    margin-left: 10px;
+    width: 40px;
+    background-color: #FFF488;
+    border: none;
+    color: var(--circle-bg-color);
+    font-family: var(--main-font);
+    padding: 0px 5px;
+}
+
+.contenedor .contenedor-texto .colors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    /* background-color: green; */
+}
+
+.contenedor .contenedor-texto .colors span {
+    margin-left: 10px;
+    width: 40px;
+    height: 20px;
+    background-color: #b557ff;
+    cursor: pointer;
+}
+
+.contenedor .contenedor-texto .colors span:nth-last-child(3) {
+    background-color: #4b9fff;
+}
+
+.contenedor .contenedor-texto .colors span:nth-last-child(2) {
+    background-color: #ff3347;
+}
+
+.comprar {
+    background-color: var(--circle-bg-color);
+    margin: 20px;
+    width: 180px;
+    padding: 15px 0px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    transition: 0.9s;
+    opacity: 0;
+    color: var(--card-bg-color);
+}
+
+.contenedor .card:hover button {
+    transition-delay: 1s;
+    transition: 1.2s;
+    opacity: 1;
+}
